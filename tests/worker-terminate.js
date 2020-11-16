@@ -1,5 +1,4 @@
-if (true || process.versions.modules < 72) {
-	// Disabled
+if (process.versions.modules < 72) {
 	console.log('pass');
 	process.exit();
 }
