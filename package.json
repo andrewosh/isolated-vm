@@ -1,27 +1,31 @@
 {
-  "name": "isolated-vm",
+  "name": "@andrewosh/isolated-vm",
   "version": "3.3.7",
-  "description": "Access to multiple isolates",
+  "description": "A prebuilt version of isolated-vm",
   "main": "isolated-vm.js",
   "types": "isolated-vm.d.ts",
   "engines": {
     "node": ">=10.4.0"
   },
   "scripts": {
-    "install": "node-gyp rebuild --release -j 4",
-    "postinstall": "node-gyp clean",
+    "install": "node-gyp-build",
     "lint": "find src -name '*.cc' | xargs -n1 clang-tidy",
-    "test": "node test.js || nodejs test.js"
+    "test": "node test.js || nodejs test.js",
+    "prebuild": "prebuildify -t 14.15.1 -t 15.4.0  --strip"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laverdet/isolated-vm.git"
+    "url": "git+https://github.com/andrewosh/isolated-vm-prebuilt.git"
   },
   "author": "https://github.com/laverdet/",
   "license": "ISC",
   "gypfile": true,
   "bugs": {
-    "url": "https://github.com/laverdet/isolated-vm/issues"
+    "url": "https://github.com/andrewosh/isolated-vm-prebuilt/issues"
   },
-  "homepage": "https://github.com/laverdet/isolated-vm#readme"
+  "homepage": "https://github.com/andrewosh/isolated-vm-prebuilt#readme",
+  "devDependencies": {
+    "node-gyp-build": "^4.2.3",
+    "prebuildify": "^4.1.1"
+  }
 }
