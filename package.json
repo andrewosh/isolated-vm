@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/andrewosh/isolated-vm#readme",
   "devDependencies": {
-    "node-gyp-build": "^4.2.3",
     "prebuildify": "^4.1.1"
+  },
+  "dependencies": {
+    "node-gyp-build": "^4.2.3"
   }
 }
