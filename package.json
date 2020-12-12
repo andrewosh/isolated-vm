@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrewosh/isolated-vm-prebuilt.git"
+    "url": "git+https://github.com/andrewosh/isolated-vm.git"
   },
   "author": "https://github.com/laverdet/",
   "license": "ISC",
   "gypfile": true,
   "bugs": {
-    "url": "https://github.com/andrewosh/isolated-vm-prebuilt/issues"
+    "url": "https://github.com/andrewosh/isolated-vm/issues"
   },
-  "homepage": "https://github.com/andrewosh/isolated-vm-prebuilt#readme",
+  "homepage": "https://github.com/andrewosh/isolated-vm#readme",
   "devDependencies": {
     "node-gyp-build": "^4.2.3",
     "prebuildify": "^4.1.1"
