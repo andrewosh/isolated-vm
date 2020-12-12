@@ -1,1 +1,2 @@
-module.exports = require('./out/isolated_vm').ivm;
+const bindings = require('node-gyp-build')(__dirname)
+module.exports = bindings.ivm;

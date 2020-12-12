@@ -8,10 +8,10 @@
     "node": ">=10.4.0"
   },
   "scripts": {
-    "install": "node-gyp rebuild --release -j 4",
-    "postinstall": "node-gyp clean",
+    "install": "node-gyp-build",
     "lint": "find src -name '*.cc' | xargs -n1 clang-tidy",
-    "test": "node test.js || nodejs test.js"
+    "test": "node test.js || nodejs test.js",
+    "prebuild": "prebuildify -t 14.15.0  --strip"
   },
   "devDependencies": {
     "isolated-vm": "."
@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/laverdet/isolated-vm/issues"
   },
-  "homepage": "https://github.com/laverdet/isolated-vm#readme"
+  "homepage": "https://github.com/laverdet/isolated-vm#readme",
+  "devDependencies": {
+    "node-gyp-build": "^4.2.3",
+    "prebuildify": "^4.1.1"
+  }
 }
