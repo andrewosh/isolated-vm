@@ -57,6 +57,7 @@
 			},
 			'conditions': [
 				[ 'OS == "linux"', { 'defines': [ 'USE_CLOCK_THREAD_CPUTIME_ID' ] } ],
+        [ 'OS == "windows"', { 'defines': [ 'SKIP_INSPECTOR' ] } ],
 			],
 			'sources': [
 				'src/external_copy/external_copy.cc',
