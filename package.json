@@ -1,6 +1,6 @@
 {
   "name": "@andrewosh/isolated-vm",
-  "version": "3.3.10-prebuild1",
+  "version": "3.3.10-prebuild2",
   "description": "A prebuilt version of isolated-vm",
   "main": "isolated-vm.js",
   "types": "isolated-vm.d.ts",
