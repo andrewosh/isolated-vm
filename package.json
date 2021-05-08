@@ -1,6 +1,6 @@
 {
   "name": "@andrewosh/isolated-vm",
-  "version": "4.1.1-prebuild1",
+  "version": "4.1.1-prebuild2",
   "description": "Access to multiple isolates",
   "main": "isolated-vm.js",
   "types": "isolated-vm.d.ts",
