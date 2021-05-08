@@ -1,6 +1,6 @@
 {
   "name": "@andrewosh/isolated-vm",
-  "version": "4.1.1",
+  "version": "4.1.1-v1",
   "description": "Access to multiple isolates",
   "main": "isolated-vm.js",
   "types": "isolated-vm.d.ts",
@@ -14,7 +14,8 @@
     "prebuild": "prebuildify -t 14.15.1 -t 15.4.0  --strip"
   },
   "devDependencies": {
-    "isolated-vm": "."
+    "node-gyp-build": "^4.2.3",
+    "prebuildify": "^4.1.1"
   },
   "repository": {
     "type": "git",
@@ -26,9 +27,5 @@
   "bugs": {
     "url": "https://github.com/andrewosh/isolated-vm/issues"
   },
-  "homepage": "https://github.com/andrewosh/isolated-vm#readme",
-  "devDependencies": {
-    "node-gyp-build": "^4.2.3",
-    "prebuildify": "^4.1.1"
-  }
+  "homepage": "https://github.com/andrewosh/isolated-vm#readme"
 }
