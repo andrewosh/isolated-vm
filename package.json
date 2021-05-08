@@ -13,8 +13,10 @@
     "test": "node test.js || nodejs test.js",
     "prebuild": "prebuildify -t 14.15.1 -t 15.4.0  --strip"
   },
+  "dependencies": {
+    "node-gyp-build": "^4.2.3"
+  },
   "devDependencies": {
-    "node-gyp-build": "^4.2.3",
     "prebuildify": "^4.1.1"
   },
   "repository": {
